@@ -1,0 +1,373 @@
+body {
+    font-family: 'Source Sans Pro';
+}
+
+header {
+    box-sizing: border-box;
+    padding: 20px;
+    height: 70px;
+    width: 100%;
+    background-color: #000040;
+    /* position: fixed;
+    top: 0;
+    z-index: 999; */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 3px #000;
+}
+
+header a {
+    color: #fff;
+}
+
+.fa-bars {
+    font-size: 26px;
+    margin-right: 20px;
+}
+
+.logo {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+
+.sidebar {
+    box-sizing: border-box;
+    padding: 30px;
+    width: 270px;
+    height: 100%;
+    background-color: #000040;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    border-right: 3px solid #fff;
+    box-shadow: 3px 0 3px #000;
+    left: -280px;
+    transition: .4s;
+}
+
+.sidebar .close {
+    color: #fff;
+    font-size: 26px;
+}
+
+.sidebar:target {
+    left: 0;
+}
+
+.nav {
+    margin-top: 30px;
+}
+
+.nav .fas,
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    text-decoration: underline;
+}
+
+.nav .fas {
+    font-size: 21px;
+    margin-right: 15px;
+    display: inline-block;
+    width: 27px;
+}
+
+.nav li {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+main {
+    height: 800px;
+    font-family: 'Lato';
+}
+
+.content {
+    /* border: 5px solid #000040; */
+    box-shadow: 0 3px 8px #000040;
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin: 70px auto 80px;
+    padding: 30px;
+    width: 60%;
+}
+
+.content h1 {
+    font-size: 32px;
+    text-align: center;
+    text-shadow: 0 8px 40px #000040;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.contact-wrapper {
+    border-radius: 30px;
+    border: 1px solid #2d2d2d;
+    overflow: hidden;
+    width: 300px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    /* box-shadow: 0 3px 8px #000; */
+    cursor: pointer;
+}
+
+.icon {
+    /* border: 1px solid black; */
+    width: 30%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.text {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    width: 70%;
+    height: 80px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.text h3,
+.text p {
+    grid-row: 2 / 3;
+    place-self: center;
+    font-size: 18px;
+}
+
+.text p {
+    grid-row: 3 / 4;
+}
+
+/* background tiap contact */
+.wa {
+    background-color: #1b892a;
+}
+
+.tele {
+    background-color: #29aaec;
+}
+
+.ig {
+    background-color: #cc3ba4;
+}
+
+.mail {
+    background-color: #c5221f;
+}
+
+/*  */
+footer {
+    font-family: 'Source Sans Pro';
+    color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+    height: 250px;
+    padding: 30px;
+    background-color: #000040;
+}
+
+footer h1 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+
+footer span {
+    font-size: 9px;
+}
+
+.footer-list {
+    float: right;
+    margin-top: -30px;
+}
+
+.footer-list h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.footer-list li {
+    margin-bottom: 10px;
+}
+
+.footer-list li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media only screen and (min-width: 280px) and (max-width: 479px) {
+    .fa-bars {
+        font-size: 22px;
+        margin-right: 20px;
+    }
+
+    .logo {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 24px;
+    }
+
+    .content {
+        /* border: 5px solid #000040; */
+        box-shadow: 0 3px 8px #000040;
+        border-radius: 30px;
+        box-sizing: border-box;
+        margin: 70px auto 80px;
+        padding: 20px;
+        width: 90%;
+    }
+
+    .content h1 {
+        font-size: 26px;
+        text-align: center;
+        text-shadow: 0 8px 40px #000040;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+
+    .contact-wrapper {
+        border-radius: 30px;
+        border: 1px solid #2d2d2d;
+        overflow: hidden;
+        width: 300px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        /* box-shadow: 0 3px 8px #000; */
+        cursor: pointer;
+    }
+
+    .icon {
+        /* border: 1px solid black; */
+        width: 30%;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .text {
+        /* border: 1px solid black; */
+        box-sizing: border-box;
+        width: 70%;
+        height: 60px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .text h3,
+    .text p {
+        grid-row: 2 / 3;
+        place-self: center;
+        font-size: 14px;
+    }
+
+    .text p {
+        grid-row: 3 / 4;
+    }
+
+    footer {
+        font-family: 'Source Sans Pro';
+        color: #fff;
+        box-sizing: border-box;
+        width: 100%;
+        height: 250px;
+        padding: 30px;
+        background-color: #000040;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer h1 {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 24px;
+    }
+
+    footer span {
+        font-size: 9px;
+    }
+
+    .footer-list h1 {
+        font-size: 14px;
+        letter-spacing: 2px;
+        margin-top: 55px;
+    }
+
+    .footer-list li {
+        margin-bottom: 10px;
+    }
+
+    .footer-list li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .footer-list li a:hover {
+        text-decoration: underline;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 991px) {
+    .contact-wrapper {
+        border-radius: 30px;
+        border: 1px solid #2d2d2d;
+        overflow: hidden;
+        width: 300px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        /* box-shadow: 0 3px 8px #000; */
+        cursor: pointer;
+    }
+
+    .icon {
+        /* border: 1px solid black; */
+        width: 30%;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .text {
+        /* border: 1px solid black; */
+        box-sizing: border-box;
+        width: 70%;
+        height: 80px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .text h3,
+    .text p {
+        grid-row: 2 / 3;
+        place-self: center;
+        font-size: 15px;
+    }
+
+    .text p {
+        grid-row: 3 / 4;
+    }
+}

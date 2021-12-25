@@ -1,0 +1,284 @@
+body {
+    font-family: 'Source Sans Pro';
+}
+
+header {
+    box-sizing: border-box;
+    padding: 20px;
+    height: 70px;
+    width: 100%;
+    background-color: #000040;
+    /* position: fixed;
+    top: 0;
+    z-index: 999; */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 3px #000;
+}
+
+header a {
+    color: #fff;
+}
+
+.fa-bars {
+    font-size: 26px;
+    margin-right: 20px;
+}
+
+.logo {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+
+.sidebar {
+    box-sizing: border-box;
+    padding: 30px;
+    width: 270px;
+    height: 100%;
+    background-color: #000040;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    border-right: 3px solid #fff;
+    box-shadow: 3px 0 3px #000;
+    left: -280px;
+    transition: .4s;
+}
+
+.sidebar .close {
+    color: #fff;
+    font-size: 26px;
+}
+
+.sidebar:target {
+    left: 0;
+}
+
+.nav {
+    margin-top: 30px;
+}
+
+.nav .fas,
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    text-decoration: underline;
+}
+
+.nav .fas {
+    font-size: 21px;
+    margin-right: 15px;
+    display: inline-block;
+    width: 27px;
+}
+
+.nav li {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+main {
+    font-family: 'Lato';
+    color: #2d2d2d;
+}
+
+.content {
+    box-shadow: 0 3px 8px #000040;
+    /* border: 1px solid black; */
+    border-radius: 30px;
+    box-sizing: border-box;
+    width: 70%;
+    padding: 30px;
+    margin: 70px auto 80px;
+}
+
+.content h1 {
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #000;
+}
+
+.content span {
+    margin-left: 20px;
+}
+
+.about-wrapper .text {
+    text-align: center;
+    margin: 30px 0 60px;
+    color: #2d2d2d;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.support {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+.sup-wrapper {
+    box-sizing: border-box;
+    border: 1px solid #2d2d2d;
+    border-radius: 30px;
+    margin-top: 30px;
+    width: 250px;
+    padding: 20px;
+}
+
+.sup-wrapper h4,
+.sup-wrapper p {
+    text-align: center;
+}
+
+.sup-wrapper h4 {
+    font-size: 19px;
+    margin-bottom: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.sup-wrapper p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+footer {
+    font-family: 'Source Sans Pro';
+    color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+    height: 250px;
+    padding: 30px;
+    background-color: #000040;
+}
+
+footer h1 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+
+footer span {
+    font-size: 9px;
+}
+
+.footer-list {
+    float: right;
+    margin-top: -30px;
+}
+
+.footer-list h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.footer-list li {
+    margin-bottom: 10px;
+}
+
+.footer-list li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media only screen and (min-width: 280px) and (max-width: 479px) {
+    .fa-bars {
+        font-size: 22px;
+        margin-right: 20px;
+    }
+
+    .logo {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 24px;
+    }
+
+    .content {
+        box-shadow: 0 3px 8px #000040;
+        /* border: 1px solid black; */
+        box-sizing: border-box;
+        width: 90%;
+        padding: 20px;
+        margin: 70px auto 80px;
+    }
+
+    .content h1 {
+        font-size: 22px;
+        text-align: center;
+        letter-spacing: 2px;
+        color: #000;
+    }
+
+    .content span {
+        margin-left: 12px;
+    }
+
+    .about-wrapper .text {
+        text-align: center;
+        margin: 30px 0 60px;
+        color: #2d2d2d;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .sup-wrapper h4 {
+        font-size: 18px;
+        margin-bottom: 18px;
+        font-weight: bold;
+        color: #000;
+    }
+
+    footer {
+        font-family: 'Source Sans Pro';
+        color: #fff;
+        box-sizing: border-box;
+        width: 100%;
+        height: 250px;
+        padding: 30px;
+        background-color: #000040;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer h1 {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 24px;
+    }
+
+    footer span {
+        font-size: 9px;
+    }
+
+    .footer-list h1 {
+        font-size: 14px;
+        letter-spacing: 2px;
+        margin-top: 55px;
+    }
+
+    .footer-list li {
+        margin-bottom: 10px;
+    }
+
+    .footer-list li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .footer-list li a:hover {
+        text-decoration: underline;
+    }
+}
